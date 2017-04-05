@@ -2,6 +2,7 @@
 
 angular.module('todoListApp')
 .service('dataService', function($http, $q) {
+
   this.getTodos = function(cb) {
     $http.get('/api/todos').then(cb);
   };
